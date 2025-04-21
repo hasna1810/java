@@ -59,7 +59,6 @@ public class Order {
         Thread t1=new Thread(new Factorial(n,lock));
         Thread t2=new Thread(new Reverse(m,lock));
         t1.start();
-        Thread.sleep(200);
         t2.start();
         try {
             t1.join();
